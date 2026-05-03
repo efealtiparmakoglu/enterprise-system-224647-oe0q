@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: enterprise-system-224647-oe0q-service
+spec:
+  selector:
+    app: enterprise-system-224647-oe0q
+  ports:
+  - port: 80
+    targetPort: 8000
+  type: ClusterIP
